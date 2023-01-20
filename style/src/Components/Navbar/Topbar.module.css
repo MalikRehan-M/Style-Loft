@@ -1,0 +1,22 @@
+.marginNav{
+    font-size: 12px;
+    text-decoration: none;
+    color: #670b19;
+    font-weight: 500;
+}
+.marginNav span{
+    margin: 0px 5px;
+}
+.fill svg{
+    fill:#670b19
+}
+.nav3 div{
+    padding: 10px 10px;
+    font-size: 13.5px;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+}
+.text a{
+    text-decoration:"none"
+}
