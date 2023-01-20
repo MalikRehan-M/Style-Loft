@@ -5,6 +5,7 @@ import Jewellery from "./Jewellery";
 import Kids from "./Kids";
 import Kurtis from "./Kurtis";
 import Lehengas from "./Lehengas";
+import Login from "./Login";
 import Men from "./Men";
 import SalwarKameez from "./SalwarKameez";
 import Sarees from "./Sarees";
@@ -26,6 +27,7 @@ export default function AllRoutes() {
             <Route path="/salwarkameez" element={<SalwarKameez/>}></Route>
             <Route path="/sarees" element={<Sarees/>}></Route>
             <Route path="/spiritual" element={<SpiritualandCollections/>}></Route>
+            <Route path="/Sign&SingUp" element={<Login/>}></Route>
         </Routes>
     )
 }

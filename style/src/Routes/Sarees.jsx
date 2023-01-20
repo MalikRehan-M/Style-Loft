@@ -1,9 +1,12 @@
 import React from 'react'
 
+
+
 const Sarees = () => {
   return (
     <div>
-      sarees
+      <h1>Sarees</h1>
+      
     </div>
   )
 }
