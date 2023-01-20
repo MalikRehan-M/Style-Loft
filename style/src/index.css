@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.outLineNone:focus{
+  outline: 0;
+}
+@media screen and (max-width:808px) {
+  #top{
+    display: none;
+  }
+  #bot{
+    display: none;
+  }
+  #mid{
+    padding: 0px 10px;
+  }
+}
+
+
+.navHove1:hover #navHo1{
+  display: flex;
+}
+
+.navHove2:hover #navHo2{
+  display: flex;
+}
+
+.navHove3:hover #navHo3{
+  display: flex;
+}
+
+.navHove4:hover #navHo4{
+  display: flex;
+}
+
+.navHove5:hover #navHo5{
+  display: flex;
+}
+
+.navHove6:hover #navHo6{
+  display: flex;
+}
+
+.navHove7:hover #navHo7{
+  display: flex;
+}
+
+.navHove8:hover #navHo8{
+  display: flex;
+}
+
+.navHove9:hover #navHo9{
+  display: flex;
+}
+
+.navHove10:hover #navHo10{
+  display: flex;
+}
+
+.navHove11:hover #navHo11{
+  display: flex;
+}
