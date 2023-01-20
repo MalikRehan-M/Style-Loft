@@ -1,21 +1,15 @@
-import React from 'react'
-import Carouselapp from '../Components/Carousel'
-import Footer from '../Components/Footer'
-import CategoryBar from '../Components/Navbar/CategoryBar'
-import SearchBar from '../Components/Navbar/SearchBar'
+import React from "react";
+import Carousel from "../Components/Carousel";
+import Midsection from "../Components/Midsection";
 
-import Topbar from '../Components/Navbar/TopBar'
 
 const Homepage = () => {
   return (
     <div>
-      <Topbar/>
-      <SearchBar/>
-      <CategoryBar/>
-      <Carouselapp/>
-      <Footer />
+      <Carousel />
+      <Midsection />
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

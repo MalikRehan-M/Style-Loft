@@ -331,9 +331,7 @@ export default function Footer() {
           Reserved.
         </Center>
       </Box>
-      <Box position="absolute" bottom="0">
-        <a href="#top">Top</a>
-      </Box>
+      
     </>
   );
 }
