@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+  opacity: 85%;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -74,3 +78,4 @@ code {
 .navHove11:hover #navHo11{
   display: flex;
 }
+

@@ -1,0 +1,27 @@
+.swiper {
+    width: 80%;
+    height: 220px;
+    z-index: 1;
+    
+  }
+  /* write hover effect for this zoom in img */
+  
+  .swiper1:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .swip{
+      margin-bottom: 2rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #670b19 !important;
+    fill: #670b19 !important;
+    stroke: #670b19!important;
+}
+.swiper-button-next{
+    padding-left: 110px;
+}

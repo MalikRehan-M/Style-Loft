@@ -1,93 +1,39 @@
-import { Flex, VStack, Text } from "@chakra-ui/react";
-
+import { Flex, VStack, Text,Image } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 export default function Dropdown8() {
   return (
-    <Flex
-      zIndex="10"
-      display="none"
-      id="navHo8"
-      bg="white"
-      right="2px"
-      top="41px"
-      position="absolute"
-      w="800px"
-      minH="200px"
-      color="black"
-      lineHeight="15px"
-    >
-      <VStack className="dropdown" justify="flex-start">
-        <Text>ROOTS</Text>
-        <Text>Kanchipuram Silk</Text>
-        <Text>Bhagalpuri Silk</Text>
-        <Text>Mysore Silk</Text>
-        <Text>Manipuri Silk</Text>
-        <Text>Kota Silk</Text>
-        <Text>Bandhani</Text>
-        <Text>Paithani</Text>
-        <Text>Kota</Text>
-        <Text>Patola</Text>
-        <Text>Jamdani</Text>
-        <Text>Kerala Kasavu</Text>
-        <Text>Bengali</Text>
-        <Text>Uppada</Text>
-        <Text>Nauvari</Text>
-      </VStack>
-      <VStack>
-        <Text>FABRIC</Text>
-        <Text>Georgette</Text>
-        <Text>Art Silk</Text>
-        <Text>Cotton</Text>
-        <Text>Pure Silk</Text>
-        <Text>Net</Text>
-        <Text>Velvet</Text>
-        <Text>Chiffon</Text>
-        <Text>Brasso</Text>
-        <Text>Chanderi</Text>
-        <Text>Organza Sarees</Text>
-        <Text>Tussar Silk</Text>
-        <Text>Crepe</Text>
-        <Text>Satin</Text>
-      </VStack>
-      <VStack>
-        <Text>OCCASION</Text>
-        <Text>Party Wear</Text>
-        <Text>Wedding</Text>
-        <Text>EID</Text>
-        <Text>Diwali</Text>
-      </VStack>
-      <VStack>
-        <Text>WORK</Text>
-        <Text>Embroidered</Text>
-        <Text>Printed</Text>
-        <Text>Heavy Work Sarees</Text>
-        <Text>Handloom Sarees</Text>
-        <Text>Hand Woven Sarees</Text>
-        <Text>Chikankari</Text>
-        <Text>Kalamkari</Text>
-        <Text>Ikat</Text>
-      </VStack>
-      <VStack>
-        <Text>COLLECTIONS</Text>
-        <Text>Exclusive</Text>
-        <Text>Bridal Sarees</Text>
-        <Text>Half Saree</Text>
-        <Text>Pre Stitched Sarees</Text>
-        <Text>Traditional Sarees</Text>
-        <Text>South Indian Sarees</Text>
-        <Text>Bollywood Sarees</Text>
-        <Text>Best Sellers</Text>
-        <Text>New Arrivals</Text>
-      </VStack>
-      <VStack>
-        <Text>MORE</Text>
-        <Text>Blouses</Text>
-        <Text>Readymade Blouse</Text>
-        <Text>Blouse Fabric​</Text>
-        <Text>Sleeveless blouse</Text>
-        <Text>Bridal Blouses</Text>
-        <Text>Petticoats</Text>
-        <Text>Blouse Neck Designs</Text>
-      </VStack>
+    <Flex padding="10px 0" justify="space-evenly" zIndex="10" display="none" id="navHo8" bg="white" right="2px" top="40px" position="absolute" w="800px" minH="200px">
+    <Flex flexDirection="column" gap="5px">
+        <NavLink  style={{color:"#670b19"}}>FURNISHING</NavLink>
+        <NavLink> Bed Sheets</NavLink>
+        <NavLink>Quilts</NavLink>
+        <NavLink>Curtains</NavLink>
+        <NavLink>Cushion Covers</NavLink>
+        <NavLink>Carpets & Rugs</NavLink>
     </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}> DECOR</NavLink>
+        <NavLink> Sculptures</NavLink>
+        <NavLink>Candles</NavLink>
+        <NavLink>Vases</NavLink>
+        <NavLink>Door Hangings</NavLink>
+        <NavLink>Decorative Plates</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>WALL ACCENTS</NavLink>
+        <NavLink> Paintings</NavLink>
+        <NavLink>Wall Art</NavLink>
+        <NavLink>Wall Clocks</NavLink>
+        <NavLink>Photo Frames</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>KITCHEN & DINING</NavLink>
+        <NavLink>Cookware</NavLink>
+        <NavLink>Utensils</NavLink>
+        <NavLink>Coasters</NavLink>
+        <NavLink>Trays</NavLink>
+    </Flex>
+    <Image src="https://assets0.mirraw.com/menus/21/home-furnishing_main.jpg?1526285139"/>
+</Flex>
   );
 }

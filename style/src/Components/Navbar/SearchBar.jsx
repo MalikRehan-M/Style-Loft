@@ -13,7 +13,7 @@ const SearchBar = () => {
                 </Link>
                 <Flex border="1px solid black" w="50%">
                     <Input border="none" fontStyle="italic" placeholder="Search Something..." borderRadius="0" w="90%"></Input>
-                    <Button _hover={{background:"#670b19"}} bg="#670b19" borderRadius="0" w="12%" border="0pc" h="35px"> <BsSearch color='white' /> </Button>
+                    <Button _hover={{background:"#670b19"}} bg="#670b19" borderRadius="0" w="13%" border="0pc" h="40px"> <BsSearch color='white' /> </Button>
                 </Flex>
             </Flex>
         </Flex> 

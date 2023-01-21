@@ -1,15 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import HomeandLiving from "./Home&Living";
 import Homepage from "./Homepage";
-import Jewellery from "./Jewellery";
-import Kids from "./Kids";
-import Kurtis from "./Kurtis";
-import Lehengas from "./Lehengas";
 import Login from "./Login";
-import Men from "./Men";
-import SalwarKameez from "./SalwarKameez";
-import Sarees from "./Sarees";
-import SpiritualandCollections from "./Spiritual&Collections";
+import SingleProduct from "./SingleProduct";
+
 
 
 
@@ -19,15 +13,16 @@ export default function AllRoutes() {
         <Routes>
             <Route path="/" element={<Homepage/>}></Route>
             <Route path="/homeliving" element={<HomeandLiving/>}></Route>
-            <Route path="/jewellery" element={<Jewellery/>}></Route>
-            <Route path="/kids" element={<Kids/>}></Route>
-            <Route path="/kurtis" element={<Kurtis/>}></Route>
-            <Route path="/lehengas" element={<Lehengas/>}></Route>
-            <Route path="/men" element={<Men/>}></Route>
-            <Route path="/salwarkameez" element={<SalwarKameez/>}></Route>
-            <Route path="/sarees" element={<Sarees/>}></Route>
-            <Route path="/spiritual" element={<SpiritualandCollections/>}></Route>
-            <Route path="/Sign&SingUp" element={<Login/>}></Route>
+            <Route path="/jewellery" element={<HomeandLiving/>}></Route>
+            <Route path="/kids" element={<HomeandLiving/>}></Route>
+            <Route path="/kurtis" element={<HomeandLiving/>}></Route>
+            <Route path="/lehengas" element={<HomeandLiving/>}></Route>
+            <Route path="/men" element={<HomeandLiving/>}></Route>
+            <Route path="/salwarkameez" element={<HomeandLiving/>}></Route>
+            <Route path="/sarees" element={<HomeandLiving/>}></Route>
+            <Route path="/spiritual" element={<HomeandLiving/>}></Route>
+            <Route path="/Sign&SingUp" element={<SingleProduct/>}></Route>
+            
         </Routes>
     )
 }
