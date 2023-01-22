@@ -88,7 +88,7 @@ export default function Footer(){
         </Box>
         <Box bg="rgb(123, 14, 29)" color="white" fontSize="xs" p="10px 0"><Center>Copyright 2023. All Rights Reserved.</Center></Box>
         {vis?(
-        <a href="#"><Box position="fixed" bottom={5} right={10} bg="white" p="10px 20px" borderRadius="50%" border="2px solid black" fontWeight={700} fontSize="xl">^</Box></a>
+        <a href="#"><Box position="fixed" bottom={5} right={10} bg="white" p="10px 20px" borderRadius="50%" border="2px solid #670b19" color="#670b19" fontWeight={700} fontSize="xl">^</Box></a>
         ):null}
     </>
 }

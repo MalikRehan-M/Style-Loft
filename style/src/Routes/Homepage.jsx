@@ -26,8 +26,6 @@ import {
   AccordionItem,
   AccordionPanel,
   Spacer,
-  VStack,
-  Input,
   Button,
   Grid,
   GridItem,
@@ -115,7 +113,7 @@ let cardImgsTitle=["Tops", "Tunics", "Dresses", "Dress Material", "Anklets", "Ba
                 p="8px"
                 backgroundColor="white"
                 border="none"
-                borderBottom="1px solid grey"
+                
               >
                 <Flex w="100%">
                   <Text fontSize="21px" fontWeight="500" marginTop="10px">
@@ -226,7 +224,7 @@ let cardImgsTitle=["Tops", "Tunics", "Dresses", "Dress Material", "Anklets", "Ba
                 fashion designers around. Get the fashion trend outfits at
                 Mirraw online shopping site with amazing options and cool price
               </Box>
-              <hr />
+              
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
@@ -382,7 +380,7 @@ let cardImgsTitle=["Tops", "Tunics", "Dresses", "Dress Material", "Anklets", "Ba
             <Text fontSize="20px" opacity="100%">BESTSELLER PRODUCTS</Text>
           </Center>
         </Flex>
-        <Stack></Stack>
+       
       </Box>
 
       <div className="swiper">
@@ -444,42 +442,6 @@ let cardImgsTitle=["Tops", "Tunics", "Dresses", "Dress Material", "Anklets", "Ba
         </SwiperSlide>
       </Swiper>
     </div> 
-
-    <Box p="20px">
-        <Center>
-          <VStack>
-            <Text fontSize="xl" fontWeight="600" letterSpacing={3}>
-              SIGN UP TO RECIEVE OUR UPDATES
-            </Text>
-            <Text fontStyle="italic">
-              Be the first to know about latest offers and discounts on Mirraw
-            </Text>
-            <Flex>
-              <Input
-                border="1px solid black"
-                fontStyle="italic"
-                placeholder="Enter your Email Address"
-                borderRadius="0"
-                size="1g"
-                w="450px"
-                m="10px 0"
-              ></Input>
-              <Button
-                variant="solid"
-                color="white"
-                bg="#670b19"
-                borderRadius="0"
-                p="15px"
-                m="10px 0"
-                fontSize="14px"
-                border="none"
-                >
-                Subscribe!
-              </Button>
-            </Flex>
-          </VStack>
-        </Center>
-      </Box>
 
 
     </div>

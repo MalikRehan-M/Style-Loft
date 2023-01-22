@@ -1,26 +1,14 @@
-import {
-    Flex,
-    Box,
-    Input,  
-    VStack,
-    Button,
-    Center,
-    Text,
-  } from '@chakra-ui/react';
+import { Flex, Image } from "@chakra-ui/react";
+import SiginIn from "../Components/SiginIn";
+import SiginUp from "../Components/SignUp";
 
-
-
-
-
-const Login = () => {
-
-
+export default function Login() {
   return (
-    <div>
-    
-      
-    </div>
+    <Flex justifyContent="space-around" w={"80%"} m="auto">
+      <Image src="https://assets0.mirraw.com/frontpages/13065/B_01_original_sized_webp.webp?1673848746" />
+      <SiginIn/>
+      <SiginUp/>
+      <Image src="https://assets0.mirraw.com/frontpages/13089/B_24_original_sized_webp.webp?1673849458" />
+    </Flex>
   );
-};
-
-export default Login
+}

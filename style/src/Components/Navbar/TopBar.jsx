@@ -1,7 +1,10 @@
 import { NavLink,Link } from "react-router-dom";
 import { Flex } from "@chakra-ui/react";
 import styles from "./Topbar.module.css";
+import { AuthContext } from "../../Context/AuthContext";
+import { useContext } from "react";
 export default function Topbar() {
+  const {logoutUser}=useContext(AuthContext)
   return (
     <Flex
       id="top"
@@ -11,7 +14,7 @@ export default function Topbar() {
       pl="30px"
       justify="space-between"
       height="40px"
-      width="100vw"
+      
     >
       <Flex align="center" width="70%">
         <NavLink className={styles.marginNav}>
@@ -40,25 +43,28 @@ export default function Topbar() {
         fontSize="13px"
         justify="space-between"
         mr="50px"
-        width="150px"
+        width="300px"
       >
         <Flex
           cursor="pointer"
           justify="center"
           align="center"
-          width="45%"
+          width="85%"
           bg="white"
           _hover={{ background: "white" }}
         >
           <svg
-            style={{ height: "15px", marginRight: "5px" }}
+            style={{ height: "17px", marginRight: "5px" }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
             <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
           </svg>
-        <Link to="/Sign&SingUp" style={{textDecoration:"none",color:'#670b19'}}>
+        <Link to="/Sign&SignUp"  style={{fontWeight:"700",color:'#670b19'}}>
           LOG IN
+        </Link>
+        <Link to="/"  style={{marginLeft:"20px",fontWeight:"700",color:'#670b19'}} onClick={logoutUser} >
+          LOG OUT
         </Link>
         </Flex>
         <Flex
@@ -67,11 +73,12 @@ export default function Topbar() {
           align="center"
           width="45%"
           bg="white"
+          fontWeight="700"
           _hover={{ background: "white" }}
         >
           <svg
-            style={{ height: "15px", marginRight: "5px" }}
-            className={{ width: "10px" }}
+            style={{ height: "20px", marginRight: "5px" }}
+            className={{ width: "15px" }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >
