@@ -2,7 +2,7 @@
  
  
  Project Type :- Individual Project 
- 
+  
  
  Backend Api & Server :- https://purple-fog-period.glitch.me/
  
