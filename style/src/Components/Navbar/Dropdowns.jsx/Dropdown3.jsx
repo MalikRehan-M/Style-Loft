@@ -1,77 +1,64 @@
 import { Flex, VStack, Text, Box } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 export default function Dropdown3() {
   return (
-    <Flex
-      zIndex="10"
-      display="none"
-      id="navHo3"
-      bg="white"
-      right="2px"
-      top="41px"
-      position="absolute"
-      w="800px"
-      minH="200px"
-      color="black"
-      lineHeight="15px"
-    >
-      <VStack className="dropdown" justify="flex-start">
-        <Box>
-          <Text color="#670b19">STYLE</Text>
-          <Text>Anarkali Suits</Text>
-          <Text>Churidar Suits</Text>
-          <Text>Punjabi Suits</Text>
-          <Text>Dress Material</Text>
-          <Text>Abaya Suits</Text>
-          <Text>Pakistani Suits</Text>
-          <Text>Palazzo</Text>
-          <Text>Saharara Suits</Text>
-          <Text>Patiala Suits</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">FABRIC</Text>
-          <Text>Cotton</Text>
-          <Text>Georgette</Text>
-          <Text>Chanderi</Text>
-          <Text>Silk</Text>
-          <Text>Net</Text>
-          <Text>Crepe</Text>
-          <Text>Cotton Silk</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">OCCASION</Text>
-          <Text>Party Wear</Text>
-          <Text>Wedding Salwar</Text>
-          <Text>Festive</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">COLLECTION</Text>
-          <Text>Plus Size Suits</Text>
-          <Text>Best Sellers</Text>
-          <Text>New Arrivals</Text>
-          <Text>Combo Silver</Text>
-          <Text>Ready to Ship</Text>
-          <Text>Collar Neck</Text>
-          <Text>Designers</Text>
-          <Text>Patiala Combo</Text>
-          <Text>Bollywood Salwars</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">STITCHING</Text>
-          <Text>Readymade Suits</Text>
-          <Text>Semi Stitched</Text>
-          <Text>Suits</Text>
-        </Box>
-      </VStack>
-     
+    <Flex padding="10px 0" justify="space-evenly" zIndex="10" display="none" id="navHo3" bg="white" right="2px" top="40px" position="absolute" w="800px" minH="200px">
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>STYLE</NavLink>
+        <NavLink>Anarkali Suits</NavLink>
+        <NavLink>Straight Suits</NavLink>
+        <NavLink>Churidar Suits</NavLink>
+        <NavLink>Punjabi Suits</NavLink>
+        <NavLink>Dress Material</NavLink>
+        <NavLink>Abaya Suits</NavLink>
+        <NavLink>Pakistani Suits</NavLink>
+        <NavLink>Sharara Suits</NavLink>
+        <NavLink>Patiala Suits</NavLink>
     </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>FABRIC</NavLink>
+        <NavLink>Cotton</NavLink>
+        <NavLink>Georgette</NavLink>
+        <NavLink>Chanderi</NavLink>
+        <NavLink>Silk</NavLink>
+        <NavLink>Net</NavLink>
+        <NavLink>Crepe</NavLink>
+        <NavLink>Cotton Silk</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>OCCASION</NavLink>
+        <NavLink>Party Wear</NavLink>
+        <NavLink>Wedding Salwar</NavLink>
+        <NavLink>Festive</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>COLLECTION</NavLink>
+        <NavLink>Plus Size Suits</NavLink>
+        <NavLink>Best Sellers</NavLink>
+        <NavLink>New Arrivals</NavLink>
+        <NavLink>Combo Salwar</NavLink>
+        <NavLink>Ready to Ship</NavLink>
+        <NavLink>Collar Neck Designs</NavLink>
+        <NavLink>Ethnic Suits</NavLink>
+        <NavLink>Patiala Combo</NavLink>
+        <NavLink>Bollywood Salwars</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>MORE</NavLink>
+        <NavLink>Blouses</NavLink>
+        <NavLink>Readymade Blouse</NavLink>
+        <NavLink>Blouse Fabric​</NavLink>
+        <NavLink>Sleeveless blouse</NavLink>
+        <NavLink>Bridal Blouses</NavLink>
+        <NavLink>Petticoats</NavLink>
+        <NavLink>Blouse Neck Designs</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>STITCHING</NavLink>
+        <NavLink>Readymade Suits</NavLink>
+        <NavLink>Semi Stitched Suits</NavLink>
+    </Flex>
+</Flex>
   );
 }

@@ -1,105 +1,85 @@
 import { Box, Flex, VStack, Text } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 export default function Dropdown1() {
   return (
-    <Flex
-      zIndex="10"
-      display="none"
-      id="navHo1"
-      bg="white"
-      right="2px"
-      top="41px"
-      position="absolute"
-      w="800px"
-      minH="200px"
-      color="black"
-      lineHeight="15px"
-    >
-      <VStack className="dropdown" justify="flex-start" >
-        <Box>
-          <Text color="#670b19">ROOTS</Text>
-          <Text>Kanchipuram Silk</Text>
-          <Text>Bhagalpuri Silk</Text>
-          <Text>Mysore Silk</Text>
-          <Text>Manipuri Silk</Text>
-          <Text>Kota Silk</Text>
-          <Text>Bandhani</Text>
-          <Text>Paithani</Text>
-          <Text>Kota</Text>
-          <Text>Patola</Text>
-          <Text>Jamdani</Text>
-          <Text>Kerala Kasavu</Text>
-          <Text>Bengali</Text>
-          <Text>Uppada</Text>
-          <Text>Nauvari</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">FABRIC</Text>
-          <Text>Georgette</Text>
-          <Text>Art Silk</Text>
-          <Text>Cotton</Text>
-          <Text>Pure Silk</Text>
-          <Text>Net</Text>
-          <Text>Velvet</Text>
-          <Text>Chiffon</Text>
-          <Text>Brasso</Text>
-          <Text>Chanderi</Text>
-          <Text>Organza Sarees</Text>
-          <Text>Tussar Silk</Text>
-          <Text>Crepe</Text>
-          <Text>Satin</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">OCCASION</Text>
-          <Text>Party Wear</Text>
-          <Text>Wedding</Text>
-          <Text>EID</Text>
-          <Text>Diwali</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">WORK</Text>
-          <Text>Embroidered</Text>
-          <Text>Printed</Text>
-          <Text>Heavy Work Sarees</Text>
-          <Text>Handloom Sarees</Text>
-          <Text>Hand Woven Sarees</Text>
-          <Text>Chikankari</Text>
-          <Text>Kalamkari</Text>
-          <Text>Ikat</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">COLLECTIONS</Text>
-          <Text>Exclusive</Text>
-          <Text>Bridal Sarees</Text>
-          <Text>Half Saree</Text>
-          <Text>Pre Stitched Sarees</Text>
-          <Text>Traditional Sarees</Text>
-          <Text>South Indian Sarees</Text>
-          <Text>Bollywood Sarees</Text>
-          <Text>Best Sellers</Text>
-          <Text>New Arrivals</Text>
-        </Box>
-      </VStack>
-      <VStack>
-        <Box>
-          <Text color="#670b19">MORE</Text>
-          <Text>Blouses</Text>
-          <Text>Readymade Blouse</Text>
-          <Text>Blouse Fabric​</Text>
-          <Text>Sleeveless blouse</Text>
-          <Text>Bridal Blouses</Text>
-          <Text>Petticoats</Text>
-          <Text>Blouse Neck Designs</Text>
-        </Box>
-      </VStack>
+    <Flex padding="10px 0" justify="space-evenly" zIndex="10" display="none"  id="navHo1" bg="white" right="2px" top="40px" position="absolute" w="800px">
+    {/* <VStack className="dropdown" justify="flex-start"> */}
+        <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>ROOTS</NavLink>
+        <NavLink>Kanchipuram Silk</NavLink>
+        <NavLink>Bhagalpuri Silk</NavLink>
+        <NavLink>Mysore Silk</NavLink>
+        <NavLink>Manipuri Silk</NavLink>
+        <NavLink>Kota Silk</NavLink>
+        <NavLink>Bandhani</NavLink>
+        <NavLink>Paithani</NavLink>
+        <NavLink>Kota</NavLink>
+        <NavLink>Patola</NavLink>
+        <NavLink>Jamdani</NavLink>
+        <NavLink>Kerala Kasavu</NavLink>
+        <NavLink>Bengali</NavLink>
+        <NavLink>Uppada</NavLink>
+        <NavLink>Nauvari</NavLink>
+        </Flex>
+    {/* </VStack> */}
+    <VStack>
+    <Flex flexDirection="column" gap="5px"><NavLink style={{color:"#670b19"}}>FABRIC</NavLink>
+        <NavLink >Georgette</NavLink>
+        <NavLink>Art Silk</NavLink>
+        <NavLink>Cotton</NavLink>
+        <NavLink>Pure Silk</NavLink>
+        <NavLink>Net</NavLink>
+        <NavLink>Velvet</NavLink>
+        <NavLink>Chiffon</NavLink>
+        <NavLink>Brasso</NavLink>
+        <NavLink>Chanderi</NavLink>
+        <NavLink>Organza Sarees</NavLink>
+        <NavLink>Tussar Silk</NavLink>
+        <NavLink>Crepe</NavLink>
+        <NavLink>Satin</NavLink>
+        </Flex>
+    </VStack>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>OCCASION</NavLink>
+        <NavLink>Party Wear</NavLink>
+        <NavLink>Wedding</NavLink>
+        <NavLink>EID</NavLink>
+        <NavLink>Diwali</NavLink>
     </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>WORK</NavLink>
+        <NavLink>Embroidered</NavLink>
+        <NavLink>Printed</NavLink>
+        <NavLink>Heavy Work Sarees</NavLink>
+        <NavLink>Handloom Sarees</NavLink>
+        <NavLink>Hand Woven Sarees</NavLink>
+        <NavLink>Chikankari</NavLink>
+        <NavLink>Kalamkari</NavLink>
+        <NavLink>Ikat</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>COLLECTIONS</NavLink>
+        <NavLink>Exclusive</NavLink>
+        <NavLink>Bridal Sarees</NavLink>
+        <NavLink>Half Saree</NavLink>
+        <NavLink>Pre Stitched Sarees</NavLink>
+        <NavLink>Traditional Sarees</NavLink>
+        <NavLink>South Indian Sarees</NavLink>
+        <NavLink>Bollywood Sarees</NavLink>
+        <NavLink>Best Sellers</NavLink>
+        <NavLink>New Arrivals</NavLink>
+    </Flex>
+    <Flex flexDirection="column" gap="5px">
+        <NavLink style={{color:"#670b19"}}>MORE</NavLink>
+        <NavLink>Blouses</NavLink>
+        <NavLink>Readymade Blouse</NavLink>
+        <NavLink>Blouse Fabric​</NavLink>
+        <NavLink>Sleeveless blouse</NavLink>
+        <NavLink>Bridal Blouses</NavLink>
+        <NavLink>Petticoats</NavLink>
+        <NavLink>Blouse Neck Designs</NavLink>
+    </Flex>
+</Flex>
   );
 }

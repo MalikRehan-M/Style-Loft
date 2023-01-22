@@ -1,7 +1,26 @@
-.Social{
+ul{
     display: flex;
+}
+
+li{
+    margin: 0 1px;
+    color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li:not(li:nth-of-type(6)){
     border: 1px solid white;
-    width: 300px;
+    width: 30px;
+    height: 30px;
+}
+/* li:nth-of-type(1){
+    list-style: none;
+} */
+
+.topScroll{
+    bottom: 0;
 }
 
 

@@ -1,33 +1,28 @@
 import { Routes, Route } from "react-router-dom";
-import HomeandLiving from "./Home&Living";
+import AllProducts from "./AllProducts";
 import Homepage from "./Homepage";
-import Jewellery from "./Jewellery";
-import Kids from "./Kids";
-import Kurtis from "./Kurtis";
-import Lehengas from "./Lehengas";
 import Login from "./Login";
-import Men from "./Men";
-import SalwarKameez from "./SalwarKameez";
-import Sarees from "./Sarees";
-import SpiritualandCollections from "./Spiritual&Collections";
-
-
-
+import SingleProduct from "./SingleProduct";
+import { useContext } from "react";
+import { AuthContext } from "../Context/AuthContext";
+import PrivateRoute from "./PrivateRoute";
 
 export default function AllRoutes() {
-    return (
-        <Routes>
-            <Route path="/" element={<Homepage/>}></Route>
-            <Route path="/homeliving" element={<HomeandLiving/>}></Route>
-            <Route path="/jewellery" element={<Jewellery/>}></Route>
-            <Route path="/kids" element={<Kids/>}></Route>
-            <Route path="/kurtis" element={<Kurtis/>}></Route>
-            <Route path="/lehengas" element={<Lehengas/>}></Route>
-            <Route path="/men" element={<Men/>}></Route>
-            <Route path="/salwarkameez" element={<SalwarKameez/>}></Route>
-            <Route path="/sarees" element={<Sarees/>}></Route>
-            <Route path="/spiritual" element={<SpiritualandCollections/>}></Route>
-            <Route path="/Sign&SingUp" element={<Login/>}></Route>
-        </Routes>
-    )
+  const { category } = useContext(AuthContext);
+  let single = `${category}/:name/:id`;
+  return (
+    <Routes>
+      <Route path="/" element={<Homepage />}></Route>
+      <Route path={category} element={<AllProducts />}></Route>
+      <Route
+        path={single}
+        element={
+          <PrivateRoute>
+            <SingleProduct />
+          </PrivateRoute>
+        }
+      ></Route>
+      <Route path="/Sign&SignUp" element={<Login />}></Route>
+    </Routes>
+  );
 }
