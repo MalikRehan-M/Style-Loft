@@ -3,29 +3,9 @@ Backend Api & Server :- https://purple-fog-period.glitch.me/
 
 ## Home Page
 
-
-## Products Page
-
-
-
-
-
-
-
-
-
-
-
 ![Screenshot 2023-04-30 123044](https://user-images.githubusercontent.com/113381261/235340650-fb2c5555-b606-493f-a0e9-6161b932e1b2.png)
 
-
-
-
-
-
-
 ![Screenshot 2023-04-30 123049](https://user-images.githubusercontent.com/113381261/235340668-d9e66b70-b9c7-41fc-a8b6-0ccdc73c7840.png)
-
 
 ![Screenshot 2023-04-30 123055](https://user-images.githubusercontent.com/113381261/235340666-b4f3db0f-f416-42a1-afb3-c3440a0044a2.png)
 ![Screenshot 2023-04-30 123101](https://user-images.githubusercontent.com/113381261/235340664-ecd076b5-f7ac-4d1e-b279-73c7bd993eff.png)
